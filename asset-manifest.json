@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Textutils/static/js/main.b4b9b1c4.js",
+    "main.js": "/Textutils/static/js/main.ba1d4ba6.js",
     "index.html": "/Textutils/index.html",
-    "main.b4b9b1c4.js.map": "/Textutils/static/js/main.b4b9b1c4.js.map"
+    "main.ba1d4ba6.js.map": "/Textutils/static/js/main.ba1d4ba6.js.map"
   },
   "entrypoints": [
-    "static/js/main.b4b9b1c4.js"
+    "static/js/main.ba1d4ba6.js"
   ]
 }
