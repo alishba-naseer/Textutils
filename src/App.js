@@ -3,12 +3,12 @@ import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import TexthtmlForm from "./Components/TextForm";
 import Alert from "./Components/Alert";
-import { BrowserRouter as Router, Routes , Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [mode, setmode] = useState("light");
   const [btnText, setbtnText] = useState("Enable Darkmode");
-  const [alert, setalert] = useState(null); 
+  const [alert, setalert] = useState(null);
 
   const showAlert = (message, type) => {
     setalert({
@@ -46,15 +46,28 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
           <Routes>
-           <Route path = "/about" element = {<About  mode={mode}/>} />
-
-            <Route path="/"
-             element = { <TexthtmlForm
-                heading="Enter the text to analyze below:"
+            <Route path="/about" element={<About mode={mode} />} />
+            <Route
+              path="/"
+              element={
+                <TexthtmlForm
+                  heading="Try Textutils - Word Counter, Character Counter, Remove extra spaces"
+                  mode={mode}
+                  showAlert={showAlert}
+                />
+              }
+            />
+             <Route
+              path="/Textutils"
+              element={
+                <TexthtmlForm
+                heading="Try Textutils - Word Counter, Character Counter, Remove extra spaces"
                 mode={mode}
-                showAlert={showAlert}
-              />} />
-            
+                  showAlert={showAlert}
+                />
+              }
+            />
+           
           </Routes>
         </div>
       </Router>
@@ -63,6 +76,3 @@ function App() {
 }
 
 export default App;
-
-
-
