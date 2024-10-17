@@ -62,7 +62,7 @@ export default function TexthtmlForm(props) {
 
         <button
           type="button"
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={handleUpclick}
           disabled={text.length === 0}
         >
@@ -71,7 +71,7 @@ export default function TexthtmlForm(props) {
 
         <button
           type="button"
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={handlelowerclick}
           disabled={text.length === 0}
 
@@ -81,7 +81,7 @@ export default function TexthtmlForm(props) {
 
         <button
           type="button"
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={handleclearclick}
           disabled={text.length === 0}
 
@@ -91,7 +91,7 @@ export default function TexthtmlForm(props) {
 
         <button
           type="button"
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={handleCopy}
           disabled={text.length === 0}
 
@@ -101,7 +101,7 @@ export default function TexthtmlForm(props) {
 
         <button
           type="button"
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={handleExtraspace}
           disabled={text.length === 0}
 
